@@ -1,5 +1,5 @@
 
-def ender(get):  # for ending the game
+def ender(get):
     print("task ",get)
     exitf = input("press enter to exit")
     exit()
@@ -11,11 +11,9 @@ try:
     f=open("img.jpg","wb")
     f.write(dump)
     f.close()
-    get = "complite"
-    ender(get)
+    ender("complite")
 except ModuleNotFoundError:
     print("module 'requests' is not installed")
-    get = "fail"
-    ender(get)
+    ender("fail")
 
 
